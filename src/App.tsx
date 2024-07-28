@@ -5,10 +5,11 @@ import Nav from "./components/Nav"
 import slide1 from "./assets/Photo/1.png"
 import slide2 from "./assets/Photo/2.png"
 import slide3 from "./assets/Photo/3.png"
+import Carousel from "./components/Carousel"
 
 function App() {
   // const [count, setCount] = useState(0)
-
+  const slides = [slide1, slide2, slide3]
   return (
     <>
       <div
@@ -40,11 +41,12 @@ function App() {
           Unique and useful for all your needs and games and things.
         </p>
       </div>
-      <div className="bg-black p-5">
-        <div
+      <div className="bg-black m-auto pt-11 w-full">
+        {/* <div
           style={{ backgroundImage: `url(${slide1})` }}
           className="w-full bg-cover h-[200px]"
-        ></div>
+        ></div> */}
+        <Carousel slides={slides} />
       </div>
     </>
   )
