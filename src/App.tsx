@@ -56,10 +56,18 @@ function App() {
             paragraph would go here about how this is great and good.
           </p>
         </div>
-        <div className="bg-navy flex justify-center items-center">
-          <div className="rounded-full w-1/2 border-2 border-white">
-            <img src={sky} className="w-20 h-20 rounded-full bg-cover" />
-            <img src={sky} className="w-5 h-5 rounded-full bg-cover" />
+        <div className="relative bg-navy flex justify-center items-center w-full h-[200px]">
+          <div className="absolute rounded-full w-[140px] h-[140px] border-2 border-white">
+            <img
+              src={sky}
+              className="absolute top-5 right-20 w-20 h-20 rounded-full bg-right-bottom"
+            />
+            <img
+              src={sky}
+              className="absolute bottom-4 left-28 w-7 h-7 rounded-full bg-left-top"
+            />
+            <div className="absolute rounded-full w-[10px] h-[10px] border-1 bg-white bottom-1 left-24"></div>
+            <div className="absolute rounded-full w-[10px] h-[10px] border-1 bg-white top-1 left-7"></div>
           </div>
         </div>
         <div
