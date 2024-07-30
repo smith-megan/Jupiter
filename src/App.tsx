@@ -5,6 +5,7 @@ import slide1 from "./assets/Photo/1.png"
 import slide2 from "./assets/Photo/2.png"
 import slide3 from "./assets/Photo/3.png"
 import Carousel from "./components/Carousel"
+import Product from "./components/Product"
 
 function App() {
   return (
@@ -111,6 +112,30 @@ function App() {
               </p>
             </div>
           </div>
+        </div>
+        <div
+          className="bg-navy bg-cover"
+          style={{ backgroundImage: `url(${ratio})` }}
+        >
+          <h1 className="font-title text-slate-300">The Latest</h1>
+          <Product
+            info={{
+              name: "Box of Holding",
+              description:
+                "Description string is pretty long but that is fine and everything",
+              url: slide2,
+              price: 300,
+            }}
+          />
+          <Product
+            info={{
+              name: "Travel Sized",
+              description:
+                "Also reasonably long filler text for testing purposes but that is fine and everything, but that is fine and everything, but that is fine and everything",
+              url: slide3,
+              price: 10,
+            }}
+          />
         </div>
       </div>
     </>
