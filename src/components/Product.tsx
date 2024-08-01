@@ -9,9 +9,9 @@ function Product(props: {
         <p>{props.info.description}</p>
         <div className="grid grid-cols-2 justify-center item-center text-center divide-x-2 divide-white border-2 border-white rounded-none p-2">
           <p>${props.info.price}</p>
-          <p className="self-center">other?</p>
+          <p className="self-center">{props.info.name}</p>
         </div>
-        <button>Add to Cart</button>
+        <button className="text-black">Add to Cart</button>
       </div>
     </>
   )

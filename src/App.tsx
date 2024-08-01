@@ -6,6 +6,7 @@ import slide2 from "./assets/Photo/2.png"
 import slide3 from "./assets/Photo/3.png"
 import Carousel from "./components/Carousel"
 import Product from "./components/Product"
+import Bullet from "./components/Bullet"
 
 function App() {
   return (
@@ -135,6 +136,17 @@ function App() {
               url: slide3,
               price: 10,
             }}
+          />
+        </div>
+        <div className="bg-navy text-slate-300 p-4">
+          <h1 className="font-title">Our Timeline</h1>
+          <Bullet
+            info={[
+              ["Hello", "darkness my old friend"],
+              ["I have", "come to talk with you again"],
+              ["Because", "a silence softly creeping"],
+              ["Left", "while I was sleeping"],
+            ]}
           />
         </div>
       </div>
