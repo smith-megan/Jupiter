@@ -146,7 +146,9 @@ function App() {
               ["I have", "come to talk with you again"],
               ["Because", "a silence softly creeping"],
               ["Left", "while I was sleeping"],
+              ["Vision", "written on the subway walls"],
             ]}
+            image={[slide1, slide2, slide3]}
           />
         </div>
       </div>

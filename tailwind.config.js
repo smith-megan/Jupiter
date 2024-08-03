@@ -10,6 +10,10 @@ export default {
       colors: {
         navy: "#1E252F",
       },
+      gridColumn: {
+        overlap: "2 / span 4",
+        underlap: "1 / -1",
+      },
     },
   },
   plugins: [],
