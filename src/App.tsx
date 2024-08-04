@@ -7,6 +7,8 @@ import slide3 from "./assets/Photo/3.png"
 import Carousel from "./components/Carousel"
 import Product from "./components/Product"
 import Bullet from "./components/Bullet"
+import Cardflip from "./components/Cardflip"
+import Doublecard from "./components/Doublecard"
 
 function App() {
   return (
@@ -151,6 +153,18 @@ function App() {
             image={[slide1, slide2, slide3]}
           />
         </div>
+        <Cardflip cards={[slide1, slide2, slide3]} />
+        <Doublecard
+          header="Card Title"
+          info={[
+            [
+              slide1,
+              "Header Here",
+              "Text that is longer than before but not important",
+            ],
+            [slide2, "Second Header", "The section with more text and details"],
+          ]}
+        />
       </div>
     </>
   )
