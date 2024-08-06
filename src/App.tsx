@@ -9,6 +9,7 @@ import Product from "./components/Product"
 import Bullet from "./components/Bullet"
 import Cardflip from "./components/Cardflip"
 import Doublecard from "./components/Doublecard"
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -164,6 +165,13 @@ function App() {
             ],
             [slide2, "Second Header", "The section with more text and details"],
           ]}
+        />
+        <Contact
+          header="Reach out for more"
+          tagline="We're very approachable"
+          button="Contact"
+          photo={sky}
+          paragraph="In this day and age we are certain you will read this paragraph and follow up because of the inspiring details contained in it."
         />
       </div>
     </>
