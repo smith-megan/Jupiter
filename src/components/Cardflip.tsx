@@ -30,7 +30,14 @@ function Cardflip(props: { cards: Array<string> }) {
         }}
       >
         {props.cards.map((s: string) => {
-          return <img key={s + "-img"} src={s} />
+          return (
+            <div className="" key={s + "-divmaster"}>
+              <div className="bg-slate-400 text-navy">
+                <p>Hiya</p>
+              </div>
+              <img key={s + "-img"} src={s} />
+            </div>
+          )
         })}
       </div>
       <div className="flex absolute top-0 h-full w-full justify-between item-center px-4">

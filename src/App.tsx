@@ -10,6 +10,7 @@ import Bullet from "./components/Bullet"
 import Cardflip from "./components/Cardflip"
 import Doublecard from "./components/Doublecard"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -173,6 +174,7 @@ function App() {
           photo={sky}
           paragraph="In this day and age we are certain you will read this paragraph and follow up because of the inspiring details contained in it."
         />
+        <Footer />
       </div>
     </>
   )
